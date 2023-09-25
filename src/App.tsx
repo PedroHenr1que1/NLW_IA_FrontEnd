@@ -8,9 +8,6 @@ export function App() {
     <Theme 
       appearance='dark'
       accentColor='ruby'
-      radius='large'
-      scaling='100%'
-      panelBackground='translucent'
     >
       <Home/>
     </Theme>
