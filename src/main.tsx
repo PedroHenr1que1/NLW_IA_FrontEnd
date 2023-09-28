@@ -7,7 +7,6 @@ import { App } from './App';
 
 import { Theme } from '@radix-ui/themes';
 
-
 import './global.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

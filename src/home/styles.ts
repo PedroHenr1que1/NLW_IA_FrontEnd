@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-import { Button, Separator, Text, TextArea, Select, Slider } from '@radix-ui/themes'
+import { Button, Separator, TextArea, Select, Slider } from '@radix-ui/themes';
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 `;
 
@@ -16,23 +16,11 @@ export const ContainerContent = styled.div`
   gap: 24px;
 `;
 
-export const ContainerDevelopBy = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 12px;
-`;
-
 export const ContainerTextAreas = styled.div`
   display: grid;
   grid-row: 2;
   gap: 16px;
   flex: 1;
-`;
-
-export const ContainerDescriptions = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
 `;
 
 export const ContainerModel = styled.div`
@@ -51,21 +39,6 @@ export const ContainerTemperature = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
-`;
-
-export const Header = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding: 24px 12px;
-  border-bottom: 0.5px solid grey;
-`;
-
-export const DevelopBy = styled(Text)`
-  color: grey;
-`;
-
-export const GitHubButton = styled(Button)`
-  cursor: pointer;
 `;
 
 export const VerticalDivider = styled(Separator)`
@@ -103,51 +76,6 @@ export const PromptIA = styled(TextArea)`
 export const ResultIA = styled(TextArea)`
   resize: none;
   padding: 20px;
-`;
-
-export const TranscriptionPrompt = styled(TextArea)`
-  resize: vertical;
-  ::placeholder{
-    font-size: 12px;
-  }
-`;
-
-export const VideoForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-`;
-
-export const VideoInput = styled.input`
-  display: none;
-`;
-
-export const Title = styled.label`
-  display: flex;
-  width: 100%;
-  cursor: pointer;
-  border: 1px dashed grey;
-  border-radius: 8px;
-  aspect-ratio: 16 / 9;
-  font-size: 14px;
-  flex-direction: column;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-  color: gray;
-  &:hover{
-    background-color: #8F364B4D;
-    transition: 0.25s;
-  }
-  &:not(:hover){
-    background-color: transparent;
-    transition: 0.25s;
-  }
-`;
-
-export const ConfirmButton = styled(Button)`
-  width: 100%;
-  cursor: pointer;
 `;
 
 export const PromptForm = styled.form`
